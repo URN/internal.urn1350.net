@@ -46,7 +46,7 @@ import { AtqCard } from './cards';
           })
 
 
-          let x = await Axios.get(`${Settings.process.env.YTMUSIC}/search/${this.state.search}`);
+          let x = await Axios.get(`${Settings.ytmusic}/search/${this.state.search}`);
             that.setState({
                 ...that.state,
                 queue: x.data,
@@ -65,7 +65,7 @@ import { AtqCard } from './cards';
           queue: [],
         })
 
-        let x = await Axios.post(`${Settings.process.env.YTMUSIC}/downloader`, id);
+        let x = await Axios.post(`${Settings.ytmusic}/downloader`, id);
       
     }
 
