@@ -15,7 +15,7 @@ export default class Queue extends React.Component {
     componentDidMount() {
   
       const getQueue = () => {
-        Axios.get(`${Settings.apiUrl}/downloader`).then((data) => {
+        Axios.get(`${Settings.process.env.YTMUSIC}/downloader`).then((data) => {
           this.setState({queue: data.data});
         });
       };

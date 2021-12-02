@@ -1,6 +1,5 @@
 {
     "siteTitle":"University Radio Nottingham - Internal",
     "siteSubtitle":"Your Music. Your News. Your Student Sound.",
-    "cdnUrl":"https://content.urn1350.net",
-    "apiUrl":"http://localhost:8888"
+    "cdnUrl":"https://content.urn1350.net"
 }
