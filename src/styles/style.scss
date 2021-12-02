@@ -1,0 +1,35 @@
+@charset 'utf-8';
+
+@import './footer.scss';
+@import './header.scss';
+@import './page.scss';
+@import './schedule.scss';
+
+@import './fonts.scss';
+
+.form-centre {
+  display: inline-block;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.outer {
+    text-align: center;
+}
+
+.atq-card{
+  display: flex;
+}
+
+.atq-card img{
+  max-width: 15em;
+  object-fit: scale-down;
+  margin-bottom: auto;
+}
+.atq-card {
+  margin: 2em 0;
+}
+
+.atq-card > div {
+  width: 100%;
+}
