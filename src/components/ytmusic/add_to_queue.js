@@ -6,7 +6,7 @@ import Input from '@material-ui/core/Input';
 import InputLabel from '@material-ui/core/InputLabel';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import FormControl from '@material-ui/core/FormControl';
-import MusicNote from '@material-ui/icons/MusicNote';
+import {MusicNote} from '@material-ui/icons';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
 import Settings from '../../settings.json';

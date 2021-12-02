@@ -3,7 +3,6 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import Markdown from 'markdown-to-jsx';
 
 import Settings from '../../settings.json';
 import { Button, Link } from '@material-ui/core';
