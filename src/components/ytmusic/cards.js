@@ -30,8 +30,9 @@ export function AtqCard({data, onClick}) {
             <Typography gutterBottom variant="h6" component="div" key="title" className="h">
               {data.title}
             </Typography>
-            <p><b>Artists</b>{data.artists.map(a => a.name).join(', ')}</p>
+            <p><b>Artists</b> {data.artists.map(a => a.name).join(', ')}</p>
             <p><b>Album</b> {data.album?data.album.name:"None"}</p>
+            <p><b>Explicit?</b> {data.isExplicit?"YES":"No"}</p>
             <p><a href={`https://youtu.be/${data.videoId}`} target="_blank"> View on YouTube</a></p>
             <Button variant="contained" color="primary" onClick={async e => onClick(data, e)}>Add to Queue</Button>
           </CardContent>
