@@ -19,7 +19,11 @@ export default function Home() {
     <Header title={Settings.siteTitle}/>
     <ImageHeader/>
     <main>
-   <LoremIpsum p={10}/>
+   <h1>University Radio Nottingham Internal Webpage</h1>
+   <a href="https://wiki.i.urn1350.net">URN Internal Wiki</a>
+
+   <h2>Some Guides you may need</h2>
+   <LoremIpsum p={2} />
     </main>
     <Footer/>
     </ThemeProvider>

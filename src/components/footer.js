@@ -13,7 +13,6 @@ import Settings from '../settings.json';
         <div>
             <strong>&copy; URN 2021</strong><br/>
             University Radio Nottingham<br/>
-            <a href="/pages/competitions/">Competition Terms</a><br/>
         </div>
         <div>
             <strong>URN Internal Site</strong><br/>
