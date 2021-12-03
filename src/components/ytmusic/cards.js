@@ -28,9 +28,10 @@ export function AtqCard({data, onClick}) {
             />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div" key="title" className="h">
-              {data.title} ({data.artists.map(a => a.name).join(', ')})
+              {data.title}
             </Typography>
-            <p><b>Album</b> {data.album.name}</p>
+            <p><b>Artists</b>{data.artists.map(a => a.name).join(', ')}</p>
+            <p><b>Album</b> {data.album?data.album.name:"None"}</p>
             <p><a href={`https://youtu.be/${data.videoId}`} target="_blank"> View on YouTube</a></p>
             <Button variant="contained" color="primary" onClick={async e => onClick(data, e)}>Add to Queue</Button>
           </CardContent>
@@ -46,10 +47,11 @@ export function QCard({data}){
               alt={data.name}
               />
             <CardContent>
-              <Typography gutterBottom variant="h6" component="div" key="title" className="h">
-                {data.title} ({data.artists.map(a => a.name).join(', ')})
-              </Typography>
-              <p><b>Album</b> {data.album.name}</p>
+            <Typography gutterBottom variant="h6" component="div" key="title" className="h">
+              {data.title}
+            </Typography>
+            <p><b>Artists</b>{data.artists.map(a => a.name).join(', ')}</p>
+            <p><b>Album</b> {data.album?data.album.name:"None"}</p>
               <p><a href={`https://youtu.be/${data.videoId}`} target="_blank"> View on YouTube</a></p>
             </CardContent>
     </Card>);
